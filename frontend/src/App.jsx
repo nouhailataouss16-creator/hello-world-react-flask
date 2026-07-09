@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("http://37.60.246.169:5002/")
       .then((response) => response.text())
       .then((data) => setMessage(data));
   }, []);
